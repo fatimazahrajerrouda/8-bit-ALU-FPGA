@@ -38,7 +38,12 @@ The ALU consists of the following functional modules:
 
 | DE1 Top Level | FPGA switches, push-buttons and seven-segment displays |
 
+### RTL Architecture
 
+The following RTL schematic illustrates the hardware
+architecture of the 8-bit ALU synthesized using Quartus II.
+
+![8-bit ALU RTL Architecture](docs/images/rtl_architecture.png)
 
 \## Tools and Technologies
 
