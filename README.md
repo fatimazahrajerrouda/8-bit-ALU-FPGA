@@ -153,6 +153,23 @@ Both implementations use one embedded multiplier.
 
 ![DE1 FPGA Synthesis](docs/images/de1_synthesis.png)
 
+### Resource Utilization Analysis
+
+The increase from **151 to 309 Logic Elements (LEs)**
+is mainly associated with the integration of the ALU
+into the DE1 FPGA interface, including operand storage,
+control logic, and seven-segment display decoding.
+
+Unlike the standalone ALU, which is purely combinational
+and requires no registers, the DE1 implementation introduces
+**113 registers** for sequential functionality, including
+operand memorization and control mechanisms.
+
+Both implementations use **one embedded hardware multiplier**.
+The additional resource utilization is therefore primarily
+associated with interface and control circuitry rather than
+increased arithmetic complexity.
+
 \## Repository Structure
 
 
