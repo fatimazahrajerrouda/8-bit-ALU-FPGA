@@ -80,7 +80,12 @@ The verification scenarios include:
 
 \- Logic operations and ALU control selection.
 
+### ModelSim Simulation Results
 
+The following waveform illustrates the functional verification
+of the 8-bit ALU using a VHDL testbench.
+
+![8-bit ALU ModelSim Simulation](docs/images/alu_simulation.png)
 
 \## FPGA Implementation
 
