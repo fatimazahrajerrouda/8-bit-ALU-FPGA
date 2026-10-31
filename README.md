@@ -172,7 +172,12 @@ increased arithmetic complexity.
 ## Hardware Validation — Cyclone II FPGA
 
 The 8-bit ALU was implemented on an Altera Cyclone II FPGA using Quartus II and programmed through the JTAG interface.
+### FPGA Hardware Demonstration
 
+The following image shows the 8-bit ALU implemented
+and tested on the Cyclone II FPGA development board.
+
+![FPGA Hardware Validation](docs/images/fpga_hardware_test.jpg)
 ### Hardware Test Setup
 
 - **FPGA:** Cyclone II EP2C20F484C7
