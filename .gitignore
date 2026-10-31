@@ -1,0 +1,35 @@
+# Quartus II - Generated files
+db/
+incremental_db/
+output_files/
+*.rpt
+*.summary
+*.smsg
+*.qws
+*.sof
+*.pof
+
+# ModelSim - Generated files
+work/
+transcript
+vsim.wlf
+*.wlf
+wlft*
+modelsim.ini
+*.cr.mti
+*.mpf
+
+# Generated simulation directories
+simulation/qsim/
+simulation/modelsim/
+
+# Generated simulation files
+*.vo
+*.vcd
+*.sft
+*.xrf
+
+# Backup and temporary files
+*.bak
+*.tmp
+*~
