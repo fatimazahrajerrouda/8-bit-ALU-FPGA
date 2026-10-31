@@ -129,6 +129,29 @@ embedded hardware multiplier.
 
 ![ALU Synthesis Results](docs/images/ual_synthesis.png)
 
+### DE1 FPGA Integration — Synthesis Results
+
+The complete system integrates the 8-bit ALU with
+the DE1 board interface, including operand storage,
+operation selection, push-buttons, switches, and
+seven-segment displays.
+
+| FPGA Resource | ALU Core | DE1 Integration |
+|---|---:|---:|
+| Logic Elements | 151 | 309 |
+| Combinational Functions | 151 | 302 |
+| Registers | 0 | 113 |
+| I/O Pins | 39 | 53 |
+| Embedded Multipliers | 1 | 1 |
+| Memory Bits | 0 | 0 |
+
+The integration increases logic utilization from
+151 to 309 Logic Elements while introducing
+113 registers for sequential functionality.
+
+Both implementations use one embedded multiplier.
+
+![DE1 FPGA Synthesis](docs/images/de1_synthesis.png)
 
 \## Repository Structure
 
