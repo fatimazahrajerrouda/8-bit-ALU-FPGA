@@ -101,7 +101,33 @@ The design includes a DE1 top-level module for hardware interaction through swit
 
 
 The Quartus II project files are included to support synthesis and FPGA implementation.
+## FPGA Synthesis Results
 
+The 8-bit ALU was successfully synthesized using
+Quartus II 13.0 SP1, targeting the Altera Cyclone II
+EP2C20F484C7 FPGA.
+
+### Resource Utilization
+
+| FPGA Resource | Utilization |
+|---|---|
+| Logic Elements | 151 / 18,752 (<1%) |
+| Combinational Functions | 151 |
+| Registers | 0 |
+| I/O Pins | 39 / 315 (12%) |
+| Embedded 9-bit Multipliers | 1 / 52 (2%) |
+| Memory Bits | 0 |
+| PLLs | 0 |
+
+The synthesis results confirm that the ALU is a
+combinational architecture requiring no registers.
+
+The multiplication operation is mapped to one
+embedded hardware multiplier.
+
+### Quartus II Flow Summary
+
+![ALU Synthesis Results](docs/images/ual_synthesis.png)
 
 
 \## Repository Structure
