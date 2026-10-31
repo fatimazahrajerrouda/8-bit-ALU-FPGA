@@ -169,6 +169,37 @@ Both implementations use **one embedded hardware multiplier**.
 The additional resource utilization is therefore primarily
 associated with interface and control circuitry rather than
 increased arithmetic complexity.
+## Hardware Validation — Cyclone II FPGA
+
+The 8-bit ALU was implemented on an Altera Cyclone II FPGA using Quartus II and programmed through the JTAG interface.
+
+### Hardware Test Setup
+
+- **FPGA:** Cyclone II EP2C20F484C7
+- **Development Board:** DE1
+- **Programming Tool:** Quartus II Programmer
+- **Configuration File:** SRAM Object File (.sof)
+- **Inputs:** Switches and push-buttons
+- **Outputs:** Seven-segment displays
+
+### Hardware Verification
+
+The DE1 top-level architecture provides an interface for testing ALU operations directly on the FPGA.
+
+The hardware implementation supports:
+
+- Operand selection and storage using switches and push-buttons.
+- Arithmetic operations: addition and subtraction.
+- Bitwise logical operations.
+- Logical and arithmetic shifts.
+- Multiplication.
+- Result visualization through seven-segment displays.
+
+### Validation Summary
+
+The ALU was programmed onto the Cyclone II FPGA and tested through the physical board interface, complementing the functional simulations performed in ModelSim.
+
+This implementation demonstrates the complete digital design workflow, from VHDL description and functional verification to synthesis, FPGA programming, and hardware testing.
 
 \## Repository Structure
 
@@ -240,7 +271,7 @@ increased arithmetic complexity.
 
 
 
-Electronic Systems Engineering Student — ENSA Tangier, Morocco
+Electronic & Automatic Systems Engineering Student — ENSA Tangier, Morocco
 
 
 
